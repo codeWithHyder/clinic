@@ -17,3 +17,11 @@ CREATE TABLE medical_histories (
    patient_id INT REFERENCES patients(id),
    status VARCHAR(30)
 );
+
+/* create table treatments */
+
+CREATE TABLE treatments (
+    id int generated always as identity PRIMARY KEY,
+	type varchar(20),
+	name varchar(30)
+);
